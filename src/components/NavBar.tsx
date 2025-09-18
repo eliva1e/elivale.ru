@@ -1,14 +1,25 @@
-import classes from './NavBar.module.css';
+import AnimatedText from './AnimatedText';
+import classes from './NavBar.module.scss';
 
 function NavBar() {
   return (
     <div className={classes.wrapper}>
       <nav className={classes.nav}>
-        <a href="#about">About Me</a>
-        <a href="#socials">Socials</a>
-        <a href="/" className={classes.logo}>ELIVALE</a>
-        <a href="#blog">Blog</a>
-        <a href="#contacts">Contacts</a>
+        <a href="#about">
+          <AnimatedText text="ABOUT" />
+        </a>
+        <a href="#socials">
+          <AnimatedText text="SOCIALS" />
+        </a>
+        <a href="/" className={classes.logo}>
+          ELIVALE
+        </a>
+        <a href="#blog">
+          <AnimatedText text="BLOG" />
+        </a>
+        <a href="#contact">
+          <AnimatedText text="CONTACT" />
+        </a>
       </nav>
     </div>
   );

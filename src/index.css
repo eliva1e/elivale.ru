@@ -1,6 +1,11 @@
+html, body {
+  height: 100%;
+}
+
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Zalando Sans Expanded", sans-serif;
   margin: 0;
-  background-color: #1a1a1a;
   color: #ededed;
+  overflow: hidden;
+  background: linear-gradient(#01274A, #055779);
 }

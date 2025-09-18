@@ -21,8 +21,8 @@ func initDatabase() *sql.DB {
 		CREATE TABLE IF NOT EXISTS posts (
 			id SERIAL PRIMARY KEY,
 			title VARCHAR(500) NOT NULL,
-			body TEXT NOT NULL,
-			creation_date TIMESTAMP
+			body VARCHAR(2000) NOT NULL,
+			created_at TIMESTAMPZ DEFAULT NOW()
 		);
 
 		CREATE TABLE IF NOT EXISTS comments (

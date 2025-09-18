@@ -1,0 +1,32 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.nav {
+  font-family: 'Workbench', sans-serif;
+  font-size: 1.4em;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  padding: 0.6rem 3rem;
+
+  background: rgba(2, 28, 39, 0.38);
+  border-radius: 100px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.7px);
+  -webkit-backdrop-filter: blur(4.7px);
+  border: 1px solid rgba(2, 28, 39, 0.77);
+
+  a {
+    color: #ededed;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+}
+
+.logo {
+  font-family: 'Honk', system-ui;
+  font-size: 2em;
+}
