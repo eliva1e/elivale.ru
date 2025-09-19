@@ -8,6 +8,8 @@ function AnimatedText({ text }: { text: string }) {
   const handleMouseEnter = () => {
     if (intervalRef.current) clearInterval(intervalRef.current);
 
+    let iteration = 0;
+
     const randomizeLetters = () => {
       setDisplayText(
         displayText
@@ -17,6 +19,12 @@ function AnimatedText({ text }: { text: string }) {
           })
           .join('')
       );
+
+      if (iteration > 8) {
+        setDisplayText(text);
+        clearInterval(interval);
+      }
+      iteration++;
     };
 
     randomizeLetters();
