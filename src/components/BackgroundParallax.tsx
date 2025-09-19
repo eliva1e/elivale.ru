@@ -11,8 +11,8 @@ function BackgroundParallax() {
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
-      setMountainsOffset((e.screenX - (window.innerWidth / 2)) / 100);
-      setTreesOffset((e.screenX - (window.innerWidth / 2)) / 20);
+      setMountainsOffset((e.screenX - (window.innerWidth / 2)) / 120);
+      setTreesOffset((e.screenX - (window.innerWidth / 2)) / 10);
     };
 
     document.body.addEventListener('mousemove', handleMouseMove);

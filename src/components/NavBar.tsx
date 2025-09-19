@@ -12,10 +12,10 @@ function NavBar() {
           <AnimatedText text="SOCIALS" />
         </a>
         <a href="/" className={classes.logo}>
-          ELIVALE
+          <AnimatedText text="ELIVALE" />
         </a>
         <a href="#blog">
-          <AnimatedText text="BLOG" />
+          <AnimatedText text="BLOG" soon />
         </a>
         <a href="#contact">
           <AnimatedText text="CONTACT" />

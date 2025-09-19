@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
 
-function AnimatedText({ text }: { text: string }) {
+function AnimatedText({ text, soon = false }: { text: string, soon?: boolean }) {
   const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
   const [displayText, setDisplayText] = useState(text);
   const intervalRef = useRef<number | null>(null);
@@ -21,7 +21,7 @@ function AnimatedText({ text }: { text: string }) {
       );
 
       if (iteration > 8) {
-        setDisplayText(text);
+        setDisplayText(soon ? 'SOON' : text);
         clearInterval(interval);
       }
       iteration++;
